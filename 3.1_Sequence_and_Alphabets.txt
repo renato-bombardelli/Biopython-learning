@@ -1,0 +1,14 @@
+Bio.Alphabet
+	IUPAC - DNA, RNA, Proteins
+
+ExtendedIUPAProtein
+IUPACAmbiguousRNA / IUPACUnbiguousRNA
+IUPACAmbiguousDNA / IUPACUnbiguousDNA / ExtendedIUPACDNA
+
+
+from Bio.Seq import Seq
+from Bio.Alphabet import IUPAC
+my_seq = Seq("ATGACAGGGCCC", IUPAC.unambiguous_dna)
+or
+my_seq = Seq("ATGATGATG", IUPAC.protein)
+
